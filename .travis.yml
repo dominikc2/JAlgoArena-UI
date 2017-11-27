@@ -7,15 +7,12 @@ before_script:
 before_deploy:
 - npm run deploy
 deploy:
-  provider: releases
+  provider: heroku
   api_key:
-    secure: foqTgIx6YXj0SjpnrIItIOqHtZ1a4O8bn1Tq38/SdbzrAlvGz2KWe4d2ZXKpi34ijwUOTOcFilMOV5GvkiAmMact6dEdU3PXsGaQ9Wp2yR0YtiYgJseJ3MIGa381FRclIZVnMgbf5Li6D0YbyZzQFS8YibY0BT4bWWyRf3wRkAUc4It9QWlECxMCBh/P5JCcHxTDwcxMhFWesI03pVRfidJIMl8lVGzeFo2aklKBtlGc3Hikdtqxa/eONrnKittXtMpDxNN5HoJXCz2nkKyf3vjob3NII3BOf/L/w3gudRBFX62MTp0dK3furT70QBwWfzvsiZUoarvmRYLGFNvUIqyxyBZ10WNMVqQBuZN7n+KC6daVBNMIIeSzMfXBSdhEXgXqnOg5iCjE1Is3E9/YOIFYzb62Bd5TrZTszom1G6guIgqGzragDOjluRJ1nzTlvZHDwVVG3XyJKQQzQ3tMyAOKNYpmWOh2dNw5DUhWZoHIF+GmDealKnMeBa9rqduDVz54TeZRy/tVlWDY5FkisSgpKwDnaroi4UuQqBrpGWhACibGAmjZH84oT4ooGdkpWa8BqCxjOZVCKQXM29kuADL4e+z6B7awSitKmZK3zdvcNWi4/jkAwHavQy7E4ir+K4l/ChMFgSi2bg/cnWf0zDkF6b0fNfy2R62dp0NIga0=
-  file_glob: true
-  file: ./dist/JAlgoArena-UI-*.zip
-  skip_cleanup: true
+    secure: b0fH+ctgkrH7T2NYnxR1dKX11KT2lKEqsOBZdmVsqDwBKpQB/+WwCZVr71k0bk4jZ0YV32PhCN4D90AdnpTJXDk4Po8LgV8Ls/TqJRo40wgvGGz/4H4BdvJt8EK/uTiWua5+C4NodzdcYsmccW+rJnCmPoJuOyUmXN6blnwhzl9A/kpNwHb9zrLDwKBNGtTyhjGc5xuFsDh8cEqMLTDPUvLInXmykwl13faoqPsYmGdTRVJ68rhTl7NUcinZ3eO3t45KrjOnm8P2omgDCi7Xe7oNaqXy9/Q9arhhYJb/WQDia2IXK4v9KeroJZg+meLRFCyav3Bzbg5NAWK2cFDwkPt5GzVUkAsqWoUuzoqBsddF8Ayar+4Z16isDd5rQpPOgD4THVnD6SGBNCCI0LiNbsW/gLBhAI56g18aLyb6ImaeJjr/huWtyNdeUzKIZzDA+o/gOfa8smGMFqSrAn40iD0DXlLTIBCAEuyKkW16d4JVt7uQZRqZQYuES/xJmbW8pzk4W0Pbdst3pt+46WX/TqVyaCO6qbbBGjR7Z9V/wBuH0oAhOhXtz8OKlmjWQFORTZiFhB3ysLa7tjje7OLs6rXMQKN5pXG4ihG+/1qfSiMouaJcRU6p6WDI7N41PU1DzartEaLALy2DxdVwcrFMYIyW0Lxku7A4s5XSOayIuak=
+  app: dominikc-jalgoarena-ui
   on:
-    repo: spolnik/JAlgoArena-UI
-    tags: true
+    repo: dominikc2/JAlgoArena-UI
 addons:
-    code_climate:
-        repo_token: 9e2995be6eae3d6663fd00f8db738c4bf306f9f7779c8f1c4fb0f5d0d56c17e0
+  code_climate:
+    repo_token: 9e2995be6eae3d6663fd00f8db738c4bf306f9f7779c8f1c4fb0f5d0d56c17e0
